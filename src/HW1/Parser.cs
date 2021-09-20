@@ -24,6 +24,12 @@ namespace HW1
                 return 2;
             }
 
+            if (num2 == 0 && (operation == '/' || operation == ':'))
+            {
+                Console.WriteLine("Dividing by zero");
+                return 3;
+            }
+
             return 0;
         }
     }
