@@ -16,7 +16,10 @@ namespace HW1_Tests
         [InlineData(new string[] {"12", "+", "t"}, 1)]
         [InlineData(new string[] {"14", "+", "3"}, 0)]
         [InlineData(new string[] {"8", "-", "5"}, 0)]
-        public void InputTests(string[] args, int expectedResult) =>
-            Assert.Equal(expectedResult, Program.Main(args));
+        public void InputTests(string[] args, int expectedResult)
+        {
+            var actualValue = Program.Main(args);
+            Assert.Equal(expectedResult, actualValue);
+        }
     }
 }

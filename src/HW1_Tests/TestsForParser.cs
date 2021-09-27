@@ -8,20 +8,29 @@ namespace HW1_Tests
         [Theory]
         [InlineData(1, new string[] {"a", "*", "1"})]
         [InlineData(1, new string[] {"41", "/", "t"})]
-        public void ArgsAreNotValid(int expectedValue, string[] inputString) =>
-            Assert.Equal(expectedValue, Parser.TryParse(inputString, out _, out _, out _));
-        
+        public void ArgsAreNotValid(int expectedValue, string[] inputString)
+        {
+            var actualValue = Parser.TryParse(inputString, out _, out _, out _);
+            Assert.Equal(expectedValue, actualValue);
+        }
+
         [Theory]
         [InlineData(2, new string[] {"2", "**", "2"})]
         [InlineData(2, new string[] {"3", "t", "10"})]
-        public void OperationsAreNotValid(int expectedValue, string[] inputString) =>
-            Assert.Equal(expectedValue, Parser.TryParse(inputString, out _, out _, out _));
+        public void OperationsAreNotValid(int expectedValue, string[] inputString)
+        {
+            var actualValue = Parser.TryParse(inputString, out _, out _, out _);
+            Assert.Equal(expectedValue, actualValue);
+        }
 
         [Theory]
         [InlineData(3, new string[] {"5", "/", "0"})]
         [InlineData(3, new string[] {"5", ":", "0"})]
-        public void DividingByZero(int expectedValue, string[] inputString) =>
-            Assert.Equal(expectedValue, Parser.TryParse(inputString, out _, out _, out _));
+        public void DividingByZero(int expectedValue, string[] inputString)
+        {
+            var actualValue = Parser.TryParse(inputString, out _, out _, out _);
+            Assert.Equal(expectedValue, actualValue);
+        }
 
         [Theory]
         [InlineData(new string[] {"2", "+", "3"}, 0, 2, '+', 3)]
@@ -31,11 +40,11 @@ namespace HW1_Tests
         [InlineData(new string[] {"5", "*", "3"}, 0, 5, '*', 3)]
         public void InputIsCorrect(string[] args, int expValue, int expArg1, int expOperation, int expArg2)
         {
-            var actualValue = Parser.TryParse(args, out int arg1, out char operation, out int arg2);
+            var actualValue = Parser.TryParse(args, out int actArg1, out char actOperation, out int actArg2);
             Assert.Equal(expValue, actualValue);
-            Assert.Equal(expArg1, arg1);
-            Assert.Equal(expOperation, operation);
-            Assert.Equal(expArg2, arg2);
+            Assert.Equal(expArg1, actArg1);
+            Assert.Equal(expOperation, actOperation);
+            Assert.Equal(expArg2, actArg2);
         }
     }
 }

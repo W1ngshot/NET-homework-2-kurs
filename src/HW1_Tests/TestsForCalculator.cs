@@ -13,7 +13,10 @@ namespace HW1_Tests
         [InlineData(15, '/', 3, 5)]
         [InlineData(15, ':', 3, 5)]
         [InlineData(15, '^', 3, 0)]
-        public void CalculateTestWithValidInput(int arg1, char operation, int arg2, int expectedValue) =>
-            Assert.Equal(expectedValue, Calculator.Calculate(arg1, operation, arg2));
+        public void CalculateTestWithValidInput(int arg1, char operation, int arg2, double expectedValue)
+        {
+            var actualValue = Calculator.Calculate(arg1, operation, arg2); 
+            Assert.Equal(expectedValue, actualValue);
         }
+    }
 }
