@@ -8,6 +8,8 @@ namespace HW1
         private static char[] operations = {'+', '-', '*', '/', ':'};
         public static int TryParse(string[] args, out int num1, out char operation, out int num2)
         {
+            if (args.Length < 3)
+                throw new ArgumentException();
             var isFirstArgInt = int.TryParse(args[0], out num1);
             var isOperationChar = char.TryParse(args[1], out operation);
             var isSecondArgInt = int.TryParse(args[2], out num2);
