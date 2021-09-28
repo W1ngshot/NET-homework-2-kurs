@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root CoveredStatements="35" TotalStatements="35" CoveragePercent="100" ReportType="DetailedXml" DotCoverVersion="2021.2.1">
+  <FileIndices>
+    <File Index="1" Name="C:\С#\NET-homework-2-kurs\src\HW2\HW2_Console\Program.cs" ChecksumAlgorithm="SHA256" Checksum="3888A8DD751CEA19FA093F2F83B586588AE22A0CB4D171F4170AB6CEBF8D0A5C" />
+    <File Index="2" Name="C:\С#\NET-homework-2-kurs\src\HW2\HW2_Console\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="3DAB221DDB7A8D7D050731DC8D289DF26D56F7DABEB91B3D7F96E5CB6C994C29" />
+    <File Index="3" Name="C:\С#\NET-homework-2-kurs\src\HW2\HW2_Console\obj\Debug\net5.0\HW2_Console.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="FC6F070A0E4AA4A22EF656B1EF6373F71B89200A7ABFB9FA5A38691A40B660E2" />
+    <File Index="4" Name="C:\С#\NET-homework-2-kurs\src\HW2\HW2_Tests\TestsForCalculator.cs" ChecksumAlgorithm="SHA256" Checksum="04B12689DFBA198A1CA90F2FD00D9534F1C85F30020DF8FB9955563754C04432" />
+    <File Index="5" Name="C:\С#\NET-homework-2-kurs\src\HW2\HW2_Tests\TestsForParser.cs" ChecksumAlgorithm="SHA256" Checksum="C0712E8B77C7367733C2075818551FF990C0E727E0F44F444B64339E5F614EFC" />
+    <File Index="6" Name="C:\С#\NET-homework-2-kurs\src\HW2\HW2_Tests\TestsForProgram.cs" ChecksumAlgorithm="SHA256" Checksum="79B126B450386E99E1EE1E2E486E0B9BDDE1AA018BC983385D95F84EAE304DCE" />
+    <File Index="7" Name="C:\Users\Кирилл\.nuget\packages\microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
+    <File Index="8" Name="C:\С#\NET-homework-2-kurs\src\HW2\HW2_Tests\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="3DAB221DDB7A8D7D050731DC8D289DF26D56F7DABEB91B3D7F96E5CB6C994C29" />
+    <File Index="9" Name="C:\С#\NET-homework-2-kurs\src\HW2\HW2_Tests\obj\Debug\net5.0\HW1_Tests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="49FB63AE3D22CA1AA8B72558BC6DDCAFE79909CFAB77BEF02C7CF646C69CD12D" />
+  </FileIndices>
+  <Assembly Name="HW1_Tests" CoveredStatements="27" TotalStatements="27" CoveragePercent="100">
+    <Namespace Name="HW1_Tests" CoveredStatements="27" TotalStatements="27" CoveragePercent="100">
+      <Type Name="TestsForCalculator" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+        <Method Name="CalculateTestWithValidInput(System.Int32,System.Char,System.Int32,System.Double):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="4" Line="17" Column="9" EndLine="17" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="18" Column="13" EndLine="18" EndColumn="75" Covered="True" />
+          <Statement FileIndex="4" Line="19" Column="13" EndLine="19" EndColumn="54" Covered="True" />
+          <Statement FileIndex="4" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="TestsForParser" CoveredStatements="19" TotalStatements="19" CoveragePercent="100">
+        <Method Name="ArgsAreNotValid(System.Int32,System.String[]):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="5" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="True" />
+          <Statement FileIndex="5" Line="13" Column="13" EndLine="13" EndColumn="81" Covered="True" />
+          <Statement FileIndex="5" Line="14" Column="13" EndLine="14" EndColumn="54" Covered="True" />
+          <Statement FileIndex="5" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="DividingByZero(System.Int32,System.String[]):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="5" Line="30" Column="9" EndLine="30" EndColumn="10" Covered="True" />
+          <Statement FileIndex="5" Line="31" Column="13" EndLine="31" EndColumn="81" Covered="True" />
+          <Statement FileIndex="5" Line="32" Column="13" EndLine="32" EndColumn="54" Covered="True" />
+          <Statement FileIndex="5" Line="33" Column="9" EndLine="33" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="InputIsCorrect(System.String[],System.Int32,System.Int32,System.Int32,System.Int32):System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="5" Line="42" Column="9" EndLine="42" EndColumn="10" Covered="True" />
+          <Statement FileIndex="5" Line="43" Column="13" EndLine="43" EndColumn="110" Covered="True" />
+          <Statement FileIndex="5" Line="44" Column="13" EndLine="44" EndColumn="49" Covered="True" />
+          <Statement FileIndex="5" Line="45" Column="13" EndLine="45" EndColumn="44" Covered="True" />
+          <Statement FileIndex="5" Line="46" Column="13" EndLine="46" EndColumn="54" Covered="True" />
+          <Statement FileIndex="5" Line="47" Column="13" EndLine="47" EndColumn="44" Covered="True" />
+          <Statement FileIndex="5" Line="48" Column="9" EndLine="48" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="OperationsAreNotValid(System.Int32,System.String[]):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="5" Line="21" Column="9" EndLine="21" EndColumn="10" Covered="True" />
+          <Statement FileIndex="5" Line="22" Column="13" EndLine="22" EndColumn="81" Covered="True" />
+          <Statement FileIndex="5" Line="23" Column="13" EndLine="23" EndColumn="54" Covered="True" />
+          <Statement FileIndex="5" Line="24" Column="9" EndLine="24" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="TestsForProgram" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+        <Method Name="InputTests(System.String[],System.Int32):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="6" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="True" />
+          <Statement FileIndex="6" Line="17" Column="13" EndLine="17" EndColumn="50" Covered="True" />
+          <Statement FileIndex="6" Line="18" Column="13" EndLine="18" EndColumn="55" Covered="True" />
+          <Statement FileIndex="6" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+  <Assembly Name="HW2_Console" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+    <Namespace Name="HW2_Console" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+      <Type Name="Program" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+        <Method Name="Main(System.String[]):System.Int32" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <Statement FileIndex="1" Line="9" Column="9" EndLine="9" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="10" Column="13" EndLine="10" EndColumn="100" Covered="True" />
+          <Statement FileIndex="1" Line="11" Column="13" EndLine="11" EndColumn="34" Covered="True" />
+          <Statement FileIndex="1" Line="12" Column="17" EndLine="12" EndColumn="36" Covered="True" />
+          <Statement FileIndex="1" Line="14" Column="13" EndLine="14" EndColumn="70" Covered="True" />
+          <Statement FileIndex="1" Line="15" Column="13" EndLine="15" EndColumn="39" Covered="True" />
+          <Statement FileIndex="1" Line="16" Column="13" EndLine="16" EndColumn="22" Covered="True" />
+          <Statement FileIndex="1" Line="17" Column="9" EndLine="17" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+</Root>
