@@ -49,7 +49,7 @@ jobs:
       working-directory: ./src/HW2
     - name: Test
       run: dotnet test --no-build --verbosity normal
-      working-directory: ./src/HW2_Tests
+      working-directory: ./src/HW2/HW2_Tests
     - name: Codecov
       uses: codecov/codecov-action@v2.1.0
       with:
