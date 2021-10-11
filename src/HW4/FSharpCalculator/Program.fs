@@ -8,7 +8,7 @@ module Program =
             printfn $"{result}"
             0
         with
-        | Exceptions.WrongArgsCount exceptionNumber -> printfn "Wrong Arguments Count"; exceptionNumber
-        | Exceptions.WrongArgument exceptionNumber -> printfn "Wrong Argument"; exceptionNumber
-        | Exceptions.WrongOperation exceptionNumber -> printfn "Wrong Operation"; exceptionNumber
-        | Exceptions.DividingByZero exceptionNumber -> printfn "Dividing By Zero"; exceptionNumber
+        | Exceptions.WrongArgsCount -> printfn "Wrong Arguments Count"; 1
+        | Exceptions.WrongArgument  -> printfn "Wrong Argument"; 2
+        | Exceptions.WrongOperation  -> printfn "Wrong Operation"; 3
+        | Exceptions.DividingByZero  -> printfn "Dividing By Zero"; 4

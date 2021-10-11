@@ -11,9 +11,9 @@ open Xunit
 let ``WrongFirstArg`` () =
     let actualValue () =
         let a = Parser.tryParse [|"a";"*";"1"|]
-        printf $"{a.ToString()}"
-    let action = Action actualValue
-    Assert.Throws<Exceptions.WrongArgument>(action)
+        printf "d"
+    //Assert.Equal(actualValue, )
+    Assert.Throws<Exceptions.WrongArgument>(Action actualValue)
 
 [<Fact>]
 let ``WrongSecondArg`` () =

@@ -1,5 +1,6 @@
 ﻿module Tests.ProgramTests
 
+open Microsoft.VisualStudio.TestPlatform.TestHost
 open Xunit
 open FSharpCalculator
 
