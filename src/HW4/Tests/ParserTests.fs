@@ -10,40 +10,35 @@ open Xunit
 [<Fact>]
 let ``WrongFirstArg`` () =
     let actualValue () =
-        let a = Parser.tryParse [|"a";"*";"1"|]
-        printf "d"
-    //Assert.Equal(actualValue, )
-    Assert.Throws<Exceptions.WrongArgument>(Action actualValue)
+        Parser.tryParse [|"a";"*";"1"|] |> ignore
+    let action = Action actualValue
+    Assert.Throws<Exceptions.WrongArgument>(action)
 
 [<Fact>]
 let ``WrongSecondArg`` () =
     let actualValue () =
-        let a = Parser.tryParse [|"41";"/";"t"|]
-        printf $"{a.ToString()}"
+        Parser.tryParse [|"41";"/";"t"|] |> ignore
     let action = Action actualValue
     Assert.Throws<Exceptions.WrongArgument>(action)
 
 [<Fact>]
 let ``WrongOperation`` () =
     let actualValue () =
-        let a = Parser.tryParse [|"3";"b";"10"|]
-        printf $"{a.ToString()}"
+        Parser.tryParse [|"3";"b";"10"|] |> ignore
     let action = Action actualValue
     Assert.Throws<Exceptions.WrongOperation>(action)
 
 [<Fact>]
 let ``Dividing by Zero`` () =
     let actualValue () =
-        let a = Parser.tryParse [|"4";"/";"0"|]
-        printf $"{a.ToString()}"
+        Parser.tryParse [|"4";"/";"0"|] |> ignore
     let action = Action actualValue
     Assert.Throws<Exceptions.DividingByZero>(action)
    
 [<Fact>] 
 let ``NotEnough`` () =
     let actualValue () =
-        let a = Parser.tryParse [|"4";"/"|]
-        printf $"{a.ToString()}"
+        Parser.tryParse [|"4";"/"|] |> ignore
     let action = Action actualValue
     Assert.Throws<Exceptions.WrongArgsCount>(action)
 
