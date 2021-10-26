@@ -103,7 +103,7 @@ jobs:
       with:
         file: ./.github/workflows/HW5_TestCoverage.xml
 
-HW6:
+  HW6:
 
     runs-on: ubuntu-latest
 
