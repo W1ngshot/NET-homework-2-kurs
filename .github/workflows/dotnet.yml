@@ -54,3 +54,75 @@ jobs:
       uses: codecov/codecov-action@v2.1.0
       with:
         file: ./.github/workflows/HW2_TestCoverage.xml
+
+  HW4:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+      working-directory: ./src/HW4/FSharpCalculator
+    - name: Build
+      run: dotnet build --no-restore
+      working-directory: ./src/HW4/FSharpCalculator
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+      working-directory: ./src/HW4/Tests
+    - name: Codecov
+      uses: codecov/codecov-action@v2.1.0
+      with:
+        file: ./.github/workflows/HW4_TestCoverage.xml
+
+  HW5:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+      working-directory: ./src/HW5/FSharpCalculator
+    - name: Build
+      run: dotnet build --no-restore
+      working-directory: ./src/HW5/FSharpCalculator
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+      working-directory: ./src/HW5/Tests
+    - name: Codecov
+      uses: codecov/codecov-action@v2.1.0
+      with:
+        file: ./.github/workflows/HW5_TestCoverage.xml
+
+  HW6:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+      working-directory: ./src/HW6/HW6
+    - name: Build
+      run: dotnet build --no-restore
+      working-directory: ./src/HW6/HW6
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+      working-directory: ./src/HW6/Tests
+    - name: Codecov
+      uses: codecov/codecov-action@v2.1.0
+      with:
+        file: ./.github/workflows/HW6_TestCoverage.xml
