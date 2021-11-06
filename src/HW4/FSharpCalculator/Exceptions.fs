@@ -1,0 +1,6 @@
+﻿module Exceptions
+
+exception WrongArgument
+exception WrongArgsCount
+exception WrongOperation
+exception DividingByZero
