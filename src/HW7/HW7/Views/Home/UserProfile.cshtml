@@ -1,0 +1,12 @@
+﻿@using HW7.Helpers
+@model UserProfile
+
+@{
+    ViewData["Title"] = "User Profile";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.MyEditorForModel()
+    <button type="submit" class="btn btn-primary">Войти</button>
+}
